@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*:focus {
+  outline: 0;
+}
+
+.main {
+  background: #fafcfd;
+  text-align: center;
+  padding: 100px 0;
+}
+
+body h3 {
+  font-size: 28px;
+  color: #0e1238;
+  margin-bottom: 50px;
+}
+
+.form {
+  width: 720px;
+  margin: 0 auto 70px;
+  position: relative;
+}
+.form .search {
+  height: 80px;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  width: 25px;
+  height: 125px;
+  justify-content: center;
+  text-align: center;
+}
+.form input {
+  width: 720px;
+  height: 80px;
+  border: 1px solid #dfe8ed;
+  border-radius: 40px;
+  padding-left: 90px;
+  font-size: 18px;
+}
+.form input::-moz-placeholder {
+  color: #6b7289;
+}
+.form input:-ms-input-placeholder {
+  color: #6b7289;
+}
+.form input::placeholder {
+  color: #6b7289;
+}
+
+.container {
+  width: 1122px;
+  text-align: left;
+  margin: 0 auto 30px;
+}
+.container > h4 {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 40px;
+}
+.container .api-list {
+  display: flex;
+  margin: 0 -7px;
+  flex-wrap: wrap;
+}
+.container .api-list .api-item {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 7px;
+  padding: 30px;
+  display: flex;
+  box-shadow: 10px -10px whitesmoke;
+  position: relative;
+  min-height: 210px;
+  overflow: hidden;
+}
+.container .api-list .api-item .api-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  padding-top: 7px;
+  margin-right: 25px;
+  min-width: 64px;
+}
+.container .api-list .api-item .item-detail h4 {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 4px;
+}
+.container .api-list .api-item .item-detail .category {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #8f9094;
+}
+.container .api-list .api-item .item-detail .description {
+  font-size: 16px;
+  color: #151926;
+  transition: 300ms opacity;
+}
+.container .api-list .api-item .item-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  background: #F9FBFC;
+  display: flex;
+  align-items: center;
+  padding: 0 21px;
+  transform: translateY(100%);
+  transition: 300ms transform;
+}
+.container .api-list .api-item .item-hover a, .container .api-list .api-item .item-hover button {
+  flex: 1;
+  margin: 0 9px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+.container .api-list .api-item .item-hover a {
+  color: #fff;
+  background-color: #141A31;
+}
+.container .api-list .api-item .item-hover a svg {
+  height: 24px;
+  width: 24px;
+}
+.container .api-list .api-item .item-hover button {
+  background: #fff;
+  color: #141A31;
+}
+.container .api-list .api-item:hover .item-detail .description {
+  opacity: 0;
+}
+.container .api-list .api-item:hover .item-hover {
+  transform: translateY(0);
+}/*# sourceMappingURL=styles.css.map */
